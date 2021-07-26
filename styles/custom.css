@@ -16,8 +16,9 @@ a {
     cursor: pointer;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    color: var(--clr-rosewood);
 }
 
 /* <------- Navigation bar  --------> */
@@ -192,6 +193,141 @@ transform: rotate(-135deg);
     box-shadow: 4px 4px 20px rgba(95, 6, 18, 0.75);
 }
 
+
+/* <------- Projects --------> */
+
+.project-section {
+    background-color: var(--clr-pastel-pink); 
+    padding: 15vh 0vh;
+    height: auto;
+}
+
+.project-section h1 {
+    color: var(--clr-rosewood);
+    font-size: 36px;
+}
+
+
+.project-card {
+    background-color: var(--clr-linen);
+    border: 2px solid var(--clr-rosewood);
+    border-radius: 10px;
+    border-bottom: 10px solid var(--clr-rosewood);
+    box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
+}
+
+.project-card .card-title {
+    font-size: 30px;
+    color: var(--clr-rosewood);
+    text-transform: uppercase;
+}
+
+.project-card .card-text {
+    color: var(--clr-rosewood);
+    font-size: 20px;
+}
+
+.project-card a {
+    background-color: var(--clr-rosewood);
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgba(95, 6, 18, 0.5);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: linen;
+    font-size: 20px;
+}
+
+.project-card a:hover {
+    background-color: var(--clr-pastel-pink);
+    color: var(--clr-rosewood);
+    border: 2px solid var(--clr-rosewood);
+    transition: all 300ms ease-in;
+}
+
+/* <------- Case Study --------> */
+
+#side-navbar a {
+    text-decoration: none;
+    color: var(--clr-rosewood);
+    font-weight: bold;
+}
+
+#side-navbar a:hover {
+    text-shadow: 0px 4px 5px rgba(95, 6, 18, 0.5);
+}
+
+#side-navbar li {
+    margin-bottom: 10px;
+}
+
+.case-study-hero {
+    background-color: var(--clr-pastel-pink);
+    height: auto;
+} 
+
+.case-study-hero h1 {
+    font-size: 30px;
+    color: var(--clr-rosewood);
+    padding: 10px 0px;
+}  
+
+.case-study-container {
+    background-color: var(--clr-linen);
+}
+
+
+.case-study-info p, b, li {
+    font-size: 16px;
+}
+
+.case-study-info h2 {
+    margin-top: 20px;
+}
+
+.case-study-img-card {
+    background-color: var(--clr-pastel-pink);
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
+}
+
+.case-study-img-card p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.case-study-img-card a {
+    background-color: var(--clr-rosewood);
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgba(95, 6, 18, 0.5);
+    text-decoration: none;
+    color: linen;
+    font-size: 16px;
+}
+
+.case-study-img-card a:hover {
+    background-color: var(--clr-linen);
+    color: var(--clr-rosewood);
+    border: 2px solid var(--clr-rosewood);
+    transition: all 300ms ease-in;
+}
+
+.case-study-external-link a {
+    background-color: var(--clr-rosewood);
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgba(95, 6, 18, 0.5);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: linen;
+    font-size: 20px;
+}
+
+.case-study-external-link a:hover {
+    background-color: var(--clr-pastel-pink);
+    color: var(--clr-rosewood);
+    border: 2px solid var(--clr-rosewood);
+    transition: all 300ms ease-in;
+}
+
 /* <------- Foooter --------> */
 
 footer {
@@ -263,6 +399,23 @@ footer p {
         font-size: 24px;
     }
 
+    .project-section h1 {
+        font-size: 48px;
+    }
+
+    .case-study-hero h1 {
+        font-size: 36px;
+    }
+
+    .case-study-info p, b, li {
+        font-size: 18px;
+    }
+
+    #side-navbar {
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -282,9 +435,23 @@ footer p {
     #home-cards a {
         font-size: 28px;
     }
+
+    .project-section h1 {
+        font-size: 56px;
+    }
+
+    .case-study-hero h1 {
+        font-size: 48px;
+    }  
+
+    .case-study-info p, b, li {
+        font-size: 20px;
+    }
 }
 
 /* <------- Keyframes --------> */
+
+/* Bouncing arrow on homepage */
 
 @keyframes bounce {
     from {
