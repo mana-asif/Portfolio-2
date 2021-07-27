@@ -23,9 +23,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* <------- Navigation bar  --------> */
 
+nav {
+    height: 10vh;
+}
+
 .navbar {
     background-color: white;
-    height: 10vh;
     box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
 }
 
@@ -271,6 +274,11 @@ transform: rotate(-135deg);
     padding: 10px 0px;
 }  
 
+.case-study-hero img {
+    box-shadow: 0px 0px 20px rgba(95, 6, 18, 0.75);
+    border-radius: 10px;
+}
+
 .case-study-container {
     background-color: var(--clr-linen);
 }
@@ -326,6 +334,19 @@ transform: rotate(-135deg);
     color: var(--clr-rosewood);
     border: 2px solid var(--clr-rosewood);
     transition: all 300ms ease-in;
+}
+
+.ata-link a {
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 14px;
+    color: var(--clr-rosewood);
+}
+
+.ata-link a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
 }
 
 /* <------- Foooter --------> */
@@ -411,6 +432,10 @@ footer p {
         font-size: 18px;
     }
 
+    .ata-link a {
+        font-size: 18px;
+    }
+
     #side-navbar {
         border-radius: 0px 10px 10px 0px;
         box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
@@ -445,6 +470,10 @@ footer p {
     }  
 
     .case-study-info p, b, li {
+        font-size: 20px;
+    }
+
+    .ata-link a {
         font-size: 20px;
     }
 }
