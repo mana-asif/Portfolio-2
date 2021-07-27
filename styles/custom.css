@@ -23,12 +23,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* <------- Navigation bar  --------> */
 
-nav {
+/* nav {
     height: 10vh;
-}
+} */
 
 .navbar {
     background-color: white;
+    height: 12vh;
     box-shadow: 4px 4px 10px rgba(95, 6, 18, 0.5);
 }
 
@@ -143,9 +144,9 @@ transform: rotate(-135deg);
 /* <------- Home page hero section  --------> */
 
 .hero-section {
-    margin-top: 10vh;
+    margin-top: 12vh;
     background-color: var(--clr-linen);
-    height: 90vh;
+    height: 88vh;
     scroll-behavior: smooth;
 }
 
@@ -171,7 +172,7 @@ transform: rotate(-135deg);
 
 #home-cards {
     background-color: var(--clr-pastel-pink);
-    padding: 10vh 0px;
+    padding: 12vh 0px;
 }
 
 #home-cards a {
