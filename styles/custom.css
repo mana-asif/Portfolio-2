@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     color: #5F0612 !important;
     text-shadow: 0px 4px 5px rgba(95, 6, 18, 0.5);
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .nav-item a {
@@ -253,11 +253,13 @@ transform: rotate(-135deg);
 #side-navbar a {
     text-decoration: none;
     color: var(--clr-rosewood);
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 #side-navbar a:hover {
-    text-shadow: 0px 4px 5px rgba(95, 6, 18, 0.5);
+    /* text-shadow: 0px 4px 5px rgba(95, 6, 18, 0.5); */
+    text-decoration: underline 1px var(--clr-rosewood);
 }
 
 #side-navbar li {
